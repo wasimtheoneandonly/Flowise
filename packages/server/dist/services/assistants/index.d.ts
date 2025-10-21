@@ -1,0 +1,20 @@
+import { ICommonObject } from 'flowise-components';
+import { DeleteResult, QueryRunner } from 'typeorm';
+import { Assistant } from '../../database/entities/Assistant';
+import { AssistantType } from '../../Interface';
+declare function getAssistantsCountByOrganization(type: AssistantType, organizationId: string): Promise<number>;
+declare const _default: {
+    createAssistant: (requestBody: any, orgId: string) => Promise<Assistant>;
+    deleteAssistant: (assistantId: string, isDeleteBoth: any) => Promise<DeleteResult>;
+    getAllAssistants: (type?: AssistantType, workspaceId?: string) => Promise<Assistant[]>;
+    getAllAssistantsCount: (type?: AssistantType, workspaceId?: string) => Promise<number>;
+    getAssistantById: (assistantId: string) => Promise<Assistant>;
+    updateAssistant: (assistantId: string, requestBody: any) => Promise<Assistant>;
+    importAssistants: (newAssistants: Partial<Assistant>[], orgId: string, _: string, subscriptionId: string, queryRunner?: QueryRunner) => Promise<any>;
+    getChatModels: () => Promise<any>;
+    getDocumentStores: (activeWorkspaceId?: string) => Promise<any>;
+    getTools: () => Promise<any>;
+    generateAssistantInstruction: (task: string, selectedChatModel: ICommonObject) => Promise<ICommonObject>;
+    getAssistantsCountByOrganization: typeof getAssistantsCountByOrganization;
+};
+export default _default;

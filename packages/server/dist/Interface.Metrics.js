@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FLOWISE_METRIC_COUNTERS = exports.FLOWISE_COUNTER_STATUS = void 0;
+var FLOWISE_COUNTER_STATUS;
+(function (FLOWISE_COUNTER_STATUS) {
+    FLOWISE_COUNTER_STATUS["SUCCESS"] = "success";
+    FLOWISE_COUNTER_STATUS["FAILURE"] = "failure";
+})(FLOWISE_COUNTER_STATUS || (exports.FLOWISE_COUNTER_STATUS = FLOWISE_COUNTER_STATUS = {}));
+var FLOWISE_METRIC_COUNTERS;
+(function (FLOWISE_METRIC_COUNTERS) {
+    FLOWISE_METRIC_COUNTERS["CHATFLOW_CREATED"] = "chatflow_created";
+    FLOWISE_METRIC_COUNTERS["AGENTFLOW_CREATED"] = "agentflow_created";
+    FLOWISE_METRIC_COUNTERS["ASSISTANT_CREATED"] = "assistant_created";
+    FLOWISE_METRIC_COUNTERS["TOOL_CREATED"] = "tool_created";
+    FLOWISE_METRIC_COUNTERS["VECTORSTORE_UPSERT"] = "vector_upserted";
+    FLOWISE_METRIC_COUNTERS["CHATFLOW_PREDICTION_INTERNAL"] = "chatflow_prediction_internal";
+    FLOWISE_METRIC_COUNTERS["CHATFLOW_PREDICTION_EXTERNAL"] = "chatflow_prediction_external";
+    FLOWISE_METRIC_COUNTERS["AGENTFLOW_PREDICTION_INTERNAL"] = "agentflow_prediction_internal";
+    FLOWISE_METRIC_COUNTERS["AGENTFLOW_PREDICTION_EXTERNAL"] = "agentflow_prediction_external";
+})(FLOWISE_METRIC_COUNTERS || (exports.FLOWISE_METRIC_COUNTERS = FLOWISE_METRIC_COUNTERS = {}));
+//# sourceMappingURL=Interface.Metrics.js.map
